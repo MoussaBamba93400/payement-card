@@ -1,0 +1,61 @@
+.card {
+    position: absolute;
+    left: 10px;
+    top: 17vh;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../images/bg-card-front.png);
+    box-shadow: 3px 3px 25px #5d5de1;
+    background-size: cover;
+    border-radius: 7px;
+    color: hsl(0, 0%, 100%);
+    text-align: left;
+    height:150px;
+    width: 70%;
+    padding: 5%;
+    font-size: 18px;
+}
+
+.card img {
+    width: 20%;
+}
+
+.iban {
+    letter-spacing: 1px;
+    word-spacing: 0.1rem;
+    margin-top: 5vh;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.card-owner {
+    margin-top: 0px;
+    display: flex;
+    font-weight: 300;
+     font-size: 12px;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+/* Back of Card */
+
+.card-back {
+    position: absolute;
+    z-index: 2;
+    top: 3vh;
+    right: 18px;
+    border: 1px solid rgb(187, 186, 186);
+    color: white;
+    border-radius: 7px ;
+    height: 160px;
+    background-image: url('../../images/bg-card-back.png');
+    background-size: cover;
+    width: 80%;
+}
+
+.card-back p {
+    text-align: right;
+    margin-top: 70px;
+    margin-right: 9vw;
+}
