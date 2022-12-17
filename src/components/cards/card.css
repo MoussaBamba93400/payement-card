@@ -1,4 +1,9 @@
-.card {
+
+
+@media screen and (max-width: 414px) {
+    
+    
+    .card {
     position: absolute;
     left: 10px;
     top: 17vh;
@@ -17,6 +22,8 @@
     font-size: 18px;
 }
 
+
+
 .card img {
     width: 20%;
 }
@@ -33,9 +40,15 @@
     margin-top: 0px;
     display: flex;
     font-weight: 300;
-     font-size: 12px;
+    font-size: 12px;
     justify-content: space-between;
-    border: 1px solid black;
+}
+
+.card-owner > span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
 }
 
 /* Back of Card */
@@ -58,4 +71,77 @@
     text-align: right;
     margin-top: 70px;
     margin-right: 9vw;
+}
+}
+
+
+@media screen and (min-width: 1000px) {
+    
+
+
+    .card {
+        position: absolute;
+        overflow-y: hidden;
+        z-index: 3;
+        top: 13vh;
+        left: 12vw;
+        background-image: url('../../images/bg-card-front.png');
+        background-size: 100% 210px;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        box-shadow: 1px 1px 9px rgb(14, 14, 14);
+        color: white;
+        text-align: left;
+        height: 210px;
+        width: 100%;
+    }
+
+    .card img {
+        margin-top: 20px;
+        margin-left: 5%;
+        width: 17%;
+    }
+
+
+    .iban {
+        text-align: center;
+        letter-spacing: 3px;
+        font-size: 1.9vw;
+    }
+
+    .card-owner {
+        display: flex;
+        justify-content: space-between;
+        margin-inline: 2vw;
+    }
+
+
+
+
+    .card-back {
+        position: absolute;
+        overflow-wrap: break-word;
+        z-index: 2;
+        left: 16vw;
+        top: 53vh;
+        box-shadow: 1px 1px 9px rgb(14, 14, 14);
+        color: white;
+        border-radius: 10px;
+        text-align: left;
+        background-image: url('../../images/bg-card-back.png');
+        background-size: 100% 190px;
+        background-repeat: no-repeat;
+        height: 190px;
+        width: 96%;
+    }
+
+    .card-back p {
+        margin-top: 14vh;
+        margin-left: 20vw;
+        width: fit-content;
+    }
+    
+     
+
+    
 }

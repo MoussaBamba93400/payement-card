@@ -1,15 +1,16 @@
 import React from 'react'
 import './card.css'
-import bgCardFront from '../../images/bg-card-front.png'
 import cardLogo from '../../images/card-logo.svg'
 
-const CardFront = () => {
+const CardFront = ({name, iban}) => {
+  let Iban = iban.match(/.{1,4}/g) ?? []
+  console.log(Iban)
   return (
     <div className='card'>
-      <img src={cardLogo} />
-      <p className='iban'>0000 0000 0000 0000</p>
+      <img src={cardLogo} alt="logo"/>
+      <p className='iban'>{Iban}</p>
 
-      <p className='card-owner'><span className='card-name'>JANE APPLESEED</span> <span>00/00</span></p>
+      <p className='card-owner'><span className='card-name'>{name.toUpperCase()}</span> <span>00/00</span></p>
     </div>
   )
 }

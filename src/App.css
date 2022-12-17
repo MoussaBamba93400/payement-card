@@ -1,18 +1,34 @@
-.App {
-  padding: 0px;
-  text-align: center;
-  overflow-x: hidden;
-  border: 1px solid black;
-  font-size: 18px;
-}
 
-.card-container {
-  padding: 0px;
-  position: relative;
-  z-index: 1;
-}
 
-.card-container img {
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 414px) {
+
+
+  .App {
+    padding: 0px;
+    text-align: center;
+    overflow-x: hidden;
+    border: 1px solid black;
+    font-size: 18px;
+  }
+  
+  .cards_container {
+    padding: 0px;
+    position: relative;
+    z-index: 1;
+  }
+  
+.cards_container img {
   width:400px;
 }
 
@@ -21,7 +37,6 @@ form {
   padding-inline: 2.5vw;
   margin-top: 15vh;
   height: fit-content;
-  border: 1px solid blue;
 }
 
 form div {
@@ -49,7 +64,6 @@ form div input {
   justify-content: space-between;
   overflow-x: hidden;
   flex-direction: row;
-  border: 1px solid blue;
 }
 
 .cvc input {
@@ -58,4 +72,116 @@ form div input {
 
 .cvc  .cvc-number {
   width: 35%;
+}
+
+ button {
+  color: white;
+  font-size: 18px;
+  border-radius: 7px;
+  width: 95%;
+  height: 60px;
+  margin-inline: 2%;
+  margin-bottom: 7vh;
+  background-color: hsl(278, 68%, 11%);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: hsl(279, 26%, 28%);
+}
+}
+
+
+@media screen and (min-width: 1000px) {
+
+  
+
+  .desktop-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+
+  .cards_container {
+    position: relative;
+    z-index: 1;
+    width: 30%;
+    height: 100vh;
+  }
+
+  .desktop-inputs {
+    border: 1px solid black;
+    margin-right: 20vw;
+    width: 25vw;
+    position: relative;
+    z-index: 3;
+  }
+
+  label {
+    font-size: 12px;
+    font-weight: ;
+    margin-bottom: 10px;
+  }
+
+  .desktop-inputs form {
+    border: 1px solid black;
+    margin-top: 20vh;
+  }
+
+  .desktop-inputs form > div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .desktop-inputs form > div h1 {
+     color: red;
+     font-size: 10px;
+  }
+
+
+  .desktop-inputs form div input {
+    border: 1px solid hsl(278, 68%, 11%);
+    border-radius: 5px;
+    height: 35px;
+  }
+
+  .desktop-inputs form div input:hover {
+    cursor: pointer;
+    border: 1px solid hsl(0, 100%, 66%);
+  }
+
+
+  .cvc {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .month-input {
+    width: 17%;
+  }
+
+  .year-input {
+   width: 17%;
+  }
+
+  .cvc-number {
+    width: 55%;
+  }
+
+
+  button {
+    color: white;
+    background-color: hsl(278, 68%, 11%);
+    border-radius: 5px;
+    margin-top: 25px;
+    height: 45px;
+    width: 100%;
+  }
+
+  button:hover {
+    cursor: pointer;
+    background-color: hsl(278, 66%, 15%);
+  }
 }
