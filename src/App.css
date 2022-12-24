@@ -110,7 +110,6 @@ button:hover {
   }
 
   .desktop-inputs {
-    border: 1px solid black;
     margin-right: 20vw;
     width: 25vw;
     position: relative;
@@ -119,12 +118,10 @@ button:hover {
 
   label {
     font-size: 12px;
-    font-weight: ;
     margin-bottom: 10px;
   }
 
   .desktop-inputs form {
-    border: 1px solid black;
     margin-top: 20vh;
   }
 
